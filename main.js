@@ -41,10 +41,12 @@ $(document).ready(function(){
 
     // carousel script
     $('.carousel').owlCarousel({
+        items: 3,
+        autoplay:true,
         margin: 20,
         loop: true,
-        autiplayTimeOut: 2000,
-        autiplayHoverPause: true,
+        autoplayTimeOut: 1000,
+        autoplayHoverPause: true,
         responsive: {
             0:{
                 items: 1,

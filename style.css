@@ -28,7 +28,7 @@
       
   }
   .navbar .logo a{
-      color: wheat;
+      color: white;
       font-size: 35px;
       font-weight: 600;
   }
@@ -38,7 +38,7 @@
 
   }
   .navbar.sticky .logo a span{
-      color: bisque;
+      color: white;
   }
   .navbar .max-width{
       display: flex;
@@ -55,7 +55,9 @@
       font-size: 28px;
       font-weight: 600;
       margin-left: 35px;
-      color: wheat;
+      color: white;
+      font-family: "Poppins";
+      letter-spacing: 0.05cm;
       transition: color 0.3s ease-in-out;
   }
   .navbar .menu li a:hover{
@@ -103,10 +105,15 @@
 .audio{
     position: fixed;
     height: 45px;
-    width: 42px;
-    right: 180px;
-    top: 80px;
-    size: 4px;
+    width: 250px;
+    left: 0;
+    top: 120px;
+    size: 10px;
+}
+div .audiop{
+    color: wheat;
+    padding-left: 28px;
+    font-size: 14px;
 }
 
 
@@ -115,7 +122,7 @@
       display: flex;
       background: url("/me2.png") no-repeat center;
       height: 100vh;
-      /* width: 100%; */
+      width: 100%;
       color: rgb(250, 249, 248);
       min-height: 500px;     
       font-family: 'Poppins', sans-serif;
@@ -252,7 +259,7 @@ section .title::after{
 /* Servicing section styling   */
 .services, .teams{
     color: white;
-    background: black;
+    background: rgb(31, 0, 24);
 }
 .services .title::before,
 .teams .title::before{
@@ -260,7 +267,7 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: rgb(7, 7, 7);
+    background: rgb(31, 0, 24);
     content: "What I Provide";
 }
 .services .service-content .card{
@@ -298,6 +305,67 @@ color: white;
 }
 
 /*Skills section styling*/
+.skills .title::after{
+    position: absolute;
+    content: "My experience";
+    color: rgb(167, 3, 112);
+    
+}
+
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  
+  .skill-header {
+    margin-bottom: 1rem;
+  }
+  
+  .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  .second-set a{
+    /* display: inline; */
+    background: rgb(167, 3, 112);
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid rgb(167, 3, 112);
+    transition: all 0.3s ease;
+}
+img .office{
+    display: inline;
+    margin-top: 15px;
+    padding-top: 36px;
+
+}
+.second-set a:hover{
+    background-color: violet;
+    transition: all 0.3s ease-out;
+
+}
+  
+  .icon {
+    width: 11.875rem;
+    height: 11.25rem;
+  }
+  .icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px 0px;
+    padding: 20px;
+    margin: 10px;
+  }
+ 
+
+/* 
 .skills .title::after{
     position: absolute;
     content: "My experience";
@@ -382,7 +450,7 @@ color: white;
 .skills .skills-content .right .sql::before{
     width: 60%;
 }
-
+ */
 /* Team section styling */
 .teams .title::after{
     content: "My experience";
