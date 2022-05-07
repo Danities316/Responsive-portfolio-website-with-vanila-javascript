@@ -120,8 +120,9 @@ div .audiop{
   /* Home section styling */
   .home{
       display: flex;
-      background: url("/image/me2.png") no-repeat center;
-      height: 100vh;
+      /* background: url("/image/me3.png") no-repeat right; */
+      background-color: rgba(132, 0, 255, 0.856);
+      height: 90vh;
       width: 100%;
       color: rgb(250, 249, 248);
       min-height: 500px;     
