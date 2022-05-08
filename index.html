@@ -7,6 +7,7 @@
     <title>Web developer | Danities Ichaba</title>
     <link rel="stylesheet" href="/css/style.css">
     <!-- Codes for running Javascript gotten from cdnjs.com-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script> -->
     <script src="https://kit.fontawesome.com/c12630f8f2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
@@ -287,7 +288,7 @@ ability to learn new software and technologies quickly, capacity to be flexible 
            <div class="contact-content">
             <div class="column left">
                 <div class="text">Get In Touch</div>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias nisi nemo sint temporibus amet voluptatibus, provident pariatur animi eos quas.</p>
+                <p>Let talk about your project or your Company, I can help you solve some of your software nagging problems.</p>
                     <div class="icons">
                         <div class="row">
                             <i class="fas fa-user"></i>
@@ -316,22 +317,24 @@ ability to learn new software and technologies quickly, capacity to be flexible 
                     </div>
                 <div class="column right">
                     <div class="text">Mesagge Me</div>
-                        <form action="#">
+                        <form onsubmit="sendEmail(); reset(); return false">
                             <div class="fields">
                                 <div class="field name">
-                                    <input type="text" placeholder="Name" required>
+                                    <input type="text" id="name" placeholder="Name" required>
                                 </div>
                                 <div class="field email">
-                                    <input type="email" placeholder="Email" required>
+                                    <input type="email" id="email" placeholder="Email" required>
                                 </div>
                             </div>
-
+                            <div class="field">
+                            <input type="text" id="phone" placeholder="Phone Number" required>
+                                </div>
                     <div class="field">
-                        <input type="text" placeholder="Subject" required>
+                        <input type="text" id="subject" placeholder="Subject" required>
                     </div>
 
                     <div class="field textarea">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Describe Your Projects......" required></textarea>
+                    <textarea name="" id="message" cols="15" rows="30" placeholder="Give me tips of what you want us to talk about......" required></textarea>
                     </div>
 
                     <div class="button">
@@ -350,7 +353,9 @@ ability to learn new software and technologies quickly, capacity to be flexible 
      <footer>
          <span>Created by <a href="#">Danities</a> | <span class="far fa-copyright"></span>2021 All Right Reserved</span>
      </footer>
-
+     <script type='text/javascript' src='js/config.js'></script>
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <!-- <script src=".netlify/functions.js"></script> -->
     <script src="/js/main.js"></script>
 </body>
 </html>
